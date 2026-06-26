@@ -1,4 +1,4 @@
-﻿const API_BASE = '/api/v1';
+const API_BASE: string = import.meta.env.VITE_API_BASE ?? '/api/v1';
 
 function authHeaders(): Record<string, string> {
   const token = localStorage.getItem('token');
