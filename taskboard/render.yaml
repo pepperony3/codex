@@ -3,8 +3,8 @@ services:
     name: taskboard-api
     runtime: docker
     plan: free
-    dockerfilePath: taskboard/docker/Dockerfile.backend
-    dockerContext: taskboard
+    repo: https://github.com/pepperony3/codex
+    rootDir: taskboard
     envVars:
       - key: SPRING_DATASOURCE_URL
         value: jdbc:h2:mem:taskboard
