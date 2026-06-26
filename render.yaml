@@ -4,7 +4,6 @@ services:
     runtime: docker
     plan: free
     dockerfilePath: Dockerfile.taskboard
-    dockerContext: taskboard
     envVars:
       - key: SPRING_DATASOURCE_URL
         value: jdbc:h2:mem:taskboard
