@@ -3,6 +3,8 @@ services:
     name: taskboard-api
     runtime: docker
     plan: free
+    repo: https://github.com/pepperony3/codex
+    rootDir: taskboard
     dockerfilePath: ./docker/Dockerfile.backend
     envVars:
       - key: SPRING_DATASOURCE_URL
