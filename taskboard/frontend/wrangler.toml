@@ -1,0 +1,6 @@
+name = "taskboard"
+pages_build_output_dir = "dist"
+compatibility_date = "2025-06-26"
+
+[env.production]
+vars = { API_BASE = "https://your-backend-api.com" }

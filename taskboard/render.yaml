@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: taskboard-api
+    runtime: docker
+    plan: free
+    dockerfilePath: ./docker/Dockerfile.backend
+    envVars:
+      - key: SPRING_DATASOURCE_URL
+        value: jdbc:h2:mem:taskboard
+      - key: APP_JWT_SECRET
+        generateValue: true
